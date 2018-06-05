@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-config" content="none"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="https://luxsocks.ru/assets/2985c72a/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://luxsocks.ru/assets/2985c72a/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="https://luxsocks.ru/assets/2985c72a/css/jquery-ui-bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="https://luxsocks.ru/assets/a2746f49/ui/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://luxsocks.ru/assets/a2746f49/ui/css/fonts.min.css" />
+<link rel="stylesheet" type="text/css" href="https://luxsocks.ru/assets/a2746f49/ui/css/flags.min.css" />
+<link rel="stylesheet" type="text/css" href="https://luxsocks.ru/assets/a2746f49/ui/css/main.min.css" />
+<link rel="stylesheet" type="text/css" href="https://luxsocks.ru/assets/a2746f49/ui/css/main_more.min.css" />
+<script type="text/javascript" src="https://luxsocks.ru/assets/a43f806b/jquery.min.js"></script>
+<script type="text/javascript" src="https://luxsocks.ru/assets/2985c72a/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://luxsocks.ru/assets/2985c72a/js/bootstrap-noconflict.js"></script>
+<script type="text/javascript" src="https://luxsocks.ru/assets/2985c72a/bootbox/bootbox.min.js"></script>
+<script type="text/javascript" src="https://luxsocks.ru/assets/2985c72a/notify/notify.min.js"></script>
+<script type="text/javascript" src="https://luxsocks.ru/assets/2985c72a/js/jquery-ui-no-conflict.min.js"></script>
+<script type="text/javascript" src="https://luxsocks.ru/assets/a43f806b/jquery.yiiactiveform.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var klasd6734jnhffwwk8d = "dDBSOVowV3AxVlQ4alVheXpfYlRDcGhFVjlzb0FLQmgZjS07kkcj9cxX7qAoy2zC-OowULdN8XN3SYXsJvMmAg=="; 
+/*]]>*/
+</script>
+<title>LuxurySocks - HOME</title>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="body-login">
+<div id="wrap-login">
+    <div id="main">
+    <section id="login-content">
+        <div class="wrapper">
+            <form class="form-signin form" id="login-form" action="/" method="post">
+<input type="hidden" value="dDBSOVowV3AxVlQ4alVheXpfYlRDcGhFVjlzb0FLQmgZjS07kkcj9cxX7qAoy2zC-OowULdN8XN3SYXsJvMmAg==" name="klasd6734jnhffwwk8d" />
+            <h4 class="form-signin-heading">
+                <div>Please Login</div>
+            </h4>
+
+            <div id="yw0"></div>
+            <div class="form-group"><div><input class="i-login form-control" placeholder="Username" name="LoginForm[username]" id="LoginForm_username" type="text" /><div class="help-block error" id="LoginForm_username_em_" style="display:none"></div></div></div>            <div class="form-group"><div><input class="i-pass form-control" placeholder="Password" name="LoginForm[password]" id="LoginForm_password" type="password" /><div class="help-block error" id="LoginForm_password_em_" style="display:none"></div></div></div>
+            <label for="LoginForm_captcha"><img class="captcha-img" id="yw1" src="https://luxsocks.ru/home/captcha/?v=5b0ec304d9f7a" alt="" /></label><div class="form-group"><div class="captcha-wrapper"><input autocomplete="off" class="captcha-field form-control" placeholder="Captcha" name="LoginForm[captcha]" id="LoginForm_captcha" type="text" /><div class="help-block error" id="LoginForm_captcha_em_" style="display:none"></div></div></div>            <div class="clearfix"></div>
+            <div class="pull-left" style="width: 49%">
+                <a href="/home/register" class="sub-link">Registration</a>
+            </div>
+            <div class="pull-right" style="width: 49%">
+                <button class="btn-block btn btn-primary" id="yw2" type="submit" name="yt0">Login</button>            </div>
+            </form>        </div>
+    </section>
+</div>
+</div>
+<footer class="footer">
+    <span>
+            <small>support jabber:</small> <br>
+luxsup@exploit.im / luxsup@swissjabber.ch
+        </span>
+</footer>
+<script type="text/javascript" src="https://luxsocks.ru/assets/a2746f49/ui/js/main.min.js"></script>
+<script type="text/javascript" src="https://luxsocks.ru/assets/a2746f49/ui/js/fx.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('[data-toggle=popover]').popover();
+jQuery('[data-toggle=tooltip]').tooltip();
+jQuery('#yw0_0 .alert').alert();
+
+jQuery(document).on('click', '#yw1', function(){
+	jQuery.ajax({
+		url: "\/home\/captcha\/?refresh=1",
+		dataType: 'json',
+		cache: false,
+		success: function(data) {
+			jQuery('#yw1').attr('src', data['url']);
+			jQuery('body').data('captcha.hash', [data['hash1'], data['hash2']]);
+		}
+	});
+	return false;
+});
+
+
+jQuery('#login-form').yiiactiveform({'validateOnSubmit':true,'errorCssClass':'has\x2Derror','successCssClass':'has\x2Dsuccess','inputContainer':'div.form\x2Dgroup','attributes':[{'id':'LoginForm_username','inputID':'LoginForm_username','errorID':'LoginForm_username_em_','model':'LoginForm','name':'username','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Username cannot be blank.");
+}
+
+
+if(jQuery.trim(value)!='') {
+	
+if(value.length<4) {
+	messages.push("Username is too short (minimum is 4 characters).");
+}
+
+}
+
+
+if(!value.match(/^[A-Za-z0-9\-\.\_]+$/)) {
+	messages.push("Username is invalid.");
+}
+
+}},{'id':'LoginForm_password','inputID':'LoginForm_password','errorID':'LoginForm_password_em_','model':'LoginForm','name':'password','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Password cannot be blank.");
+}
+if(jQuery.trim(value)!='') {
+	
+if(value.length<4) {
+	messages.push("Password is too short (minimum is 4 characters).");
+}
+}
+}}],'errorCss':'error'});
+});
+/*]]>*/
+</script>
+</body>
+</html>
